@@ -3,7 +3,7 @@ name = "ai-quiz"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "langchain>=1.1.3",
     "langchain-groq>=1.1.0",
