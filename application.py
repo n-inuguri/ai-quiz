@@ -41,7 +41,7 @@ def main():
         st.session_state.custom_persona = ""
         
 
-    st.title("AI QUIZ GENERATOR")
+    st.title("AI Quiz Generator")
 
     st.sidebar.header("Model Configuration")
 
