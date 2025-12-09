@@ -3,7 +3,7 @@ pipeline {
     environment {
         DOCKER_HUB_REPO = "inuguri/studybuddy"
         DOCKER_HUB_CREDENTIALS_ID = "dockerhib-token"
-        IMAGE_TAG = "latest"
+        IMAGE_TAG = "v${BUILD_NUMBER}"
     }
     stages {
         stage('Checkout Github') {
@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    sed -i 's|image: dataguru97/studybuddy:.*|image: dataguru97/studybuddy:${IMAGE_TAG}|' manifests/deployment.yaml
+                    sed -i 's|image: inuguri/studybuddy:.*|image: inuguri/studybuddy:${IMAGE_TAG}|' manifests/deployment.yaml
                     """
                 }
             }

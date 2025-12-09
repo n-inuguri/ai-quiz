@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: llmops-app
-        image: inuguri/studybuddy:latest
+        image: inuguri/studybuddy:__IMAGE_TAG__
         ports:
         - containerPort: 8501
         env:
