@@ -1,0 +1,9 @@
+logs/
+venv/
+.env
+LLMOPS_3.egg-info/
+results/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
