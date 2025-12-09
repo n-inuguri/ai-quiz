@@ -8,7 +8,7 @@ load_dotenv()
 
 
 def main():
-    st.set_page_config(page_title="studdy Buddy AI" , page_icon="🎧🎧")
+    st.set_page_config(page_title="AI Quiz" , page_icon="🎧🎧")
 
     if 'quiz_manager'not in st.session_state:
         st.session_state.quiz_manager = QuizManager()
@@ -41,7 +41,7 @@ def main():
         st.session_state.custom_persona = ""
         
 
-    st.title("Study Buddy AI NEW NEW NEW NEW")
+    st.title("AI QUIZ GENERATOR ")
 
     st.sidebar.header("Model Configuration")
 
